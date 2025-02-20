@@ -10,6 +10,7 @@ import Schedule from './components/Schedule.jsx'
 import Workshop from './components/Workshop.jsx'
 import FAQ from './components/FAQ.jsx'
 import Sponsor from './components/Sponsor.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return(
@@ -25,6 +26,7 @@ function App() {
       <Workshop/>
       <FAQ/>
       <Sponsor/>
+      <Footer/>
     </>
   )
 }
