@@ -17,7 +17,8 @@ function App() {
     <>
       <Navbar/>
       <Tagline/>
-      <Countdown/>
+      <Countdown timer="Registration Timer" targetDate="2025-05-24T00:00:00"/>
+      <Countdown timer="Event Timer" targetDate="2025-05-26T00:00:00"/>
       <About/>
       <Theme/>
       <Achievement/>
