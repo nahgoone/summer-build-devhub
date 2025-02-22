@@ -1,45 +1,38 @@
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { useState } from 'react';
 import FAQCard from './FAQCard.jsx';
+import FAQTopic from "./FAQTopic.jsx";
 
 function FAQ(){
 
     const [active, setActive] = useState('General');
+    const topics = ["General", "Registration", "Resources"];
 
     const handleClick = (item) => {
         setActive(item);
     };
 
-    return(
-        <div className='flex flex-col'>
-            <h1 className='uppercase justify-center text-center font-bold text-2xl'> 
-                <span className='text-[#FA6B1C]'>frequently </span>
-                <span className='text-[#1E1E1E]'>asked questions </span> 
-            </h1>
-            <div className='flex w-auto justify-center mx-10'>
-                {['General', 'Registration', 'Resources'].map((item) => (
-                    <h1 
-                        key={item}
-                        className={`font-bold text my-5 mx-20 cursor-pointer ${active === item ? 'text-[#1E1E1E]' : 'text-[#81BFDA]'}`}
-                        onClick={() => handleClick(item)}
-                    >
-                        {item}
-                    </h1>
-                ))}
-            </div>
-            <div className='flex flex-col justify-center m-auto rounded-xl bg-[#81BFDA] w-[700px]'>
-                <FAQCard question='Who can participate in SummerBuild 2025?'
-                    answer='SummerBuild 2025 is open to all CCDS students, no matter the study year or course!
-                    Join now and start building!'/>
-                <FAQCard question='Question' answer='Answer'/>
-                <FAQCard question='Question' answer='Answer'/>
-                
-            </div>
-            <div className='flex flex-col justify-center mt-10 m-auto rounded-xl bg-[#F5F0CD] w-[700px]'>
-                <p className='text-[#81BFDA] font-bold p-5 '>Question</p>
-            </div>
-
+    return (
+        <div className="flex flex-col mt-20">
+          <h1 className="uppercase justify-center text-center font-bold md:mb-10 sm:mb-7.5 mb-5 md:text-4xl sm:text-3xl text-2xl">
+            <span className="text-[#FA6B1C]">frequently </span>
+            <span className="text-[#1E1E1E]">asked questions </span>
+          </h1>
+          <div className="flex w-auto justify-center mx-10">
+            {topics.map((topic) => (
+              <h1
+                key={topic}
+                className={`font-bold md:mb-7.5 sm:mb-5 mb-2.5 md:mx-15 sm:mx-10 mx-5 md:text-[30px] sm:text-[25px] text-[18px] cursor-pointer ${
+                  active === topic ? "text-[#1E1E1E]" : "text-[#81BFDA]"
+                }`}
+                onClick={() => setActive(topic)}
+              >
+                {topic}
+              </h1>
+            ))}
+          </div>
+          <FAQTopic active={active} />
         </div>
-    )
+      )
 }
 export default FAQ

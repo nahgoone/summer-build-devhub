@@ -10,15 +10,16 @@ function FAQCard(props){
     }
 
     return(
-        <div className='flex rounded-xl text-[25px] bg-white m-3 px-5 py-3'>
-            <div className=' h-[25px] mt-2 pr-1' onClick={handleArrow}>
-                {!arrow ? <IoIosArrowForward size ={18}/>: <IoIosArrowDown className='mt-0.5' size ={18}/>}
-            </div>
-            <div className='flex flex-col'> 
-                <p className='font-bold'>{props.question}</p>
-                <div className={!arrow ? 'hidden' : 'text-[18px] pt-2'}>
-                    <p>{props.answer}</p>
+        <div className='flex flex-col rounded-xl md:text-[25px] sm:text-[20px] text-[15px]  bg-white m-3 px-5 py-3'>
+            <div className="flex items-center">
+                <div className=' md:h-[25px] sm:h-[18px] h-[15px] pr-1' onClick={handleArrow}>
+                    {!arrow ? <IoIosArrowForward size='auto'/> : 
+                    <IoIosArrowDown size='auto'/>}
                 </div>
+                <p className='font-bold'>{props.question}</p>
+            </div>
+            <div className={!arrow ? 'hidden' : 'md:text-[18px] sm:text-[15px] text-[13px] md:ml-[30px] sm:ml-[25px] ml-[20px] pt-2'}>
+                <p>{props.answer}</p>
             </div>
         </div>
     )
