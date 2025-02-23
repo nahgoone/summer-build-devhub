@@ -12,7 +12,7 @@ function Theme(){
                     <ThemeCard color='#B1F0F7' text='Theme 1'/>
                     <ThemeCard color='#FADA7A' text='Theme 2'/>
                 </div>
-                <div className='flex w-auto justify-center'>
+                <div className='flex w-auto justify-center mt-5'>
                     <ThemeCard color='#F5F0CD' text='Theme 3'/>
                     <ThemeCard color='#81BFDA' text='Theme 4'/>
                 </div>

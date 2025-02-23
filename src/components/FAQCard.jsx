@@ -16,7 +16,7 @@ function FAQCard(props){
                     {!arrow ? <IoIosArrowForward size='auto'/> : 
                     <IoIosArrowDown size='auto'/>}
                 </div>
-                <p className='font-bold'>{props.question}</p>
+                <p className='font-semibold'>{props.question}</p>
             </div>
             <div className={!arrow ? 'hidden' : 'md:text-[18px] sm:text-[15px] text-[13px] md:ml-[30px] sm:ml-[25px] ml-[20px] pt-2'}>
                 <p>{props.answer}</p>

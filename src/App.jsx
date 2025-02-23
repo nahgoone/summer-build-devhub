@@ -1,5 +1,5 @@
-import './App.css'
 import Navbar from './components/Navbar.jsx'
+import NewNav from './components/NewNav.jsx'
 import Tagline from './components/Tagline.jsx'
 import Countdown from './components/Countdown.jsx'
 import About from './components/About.jsx'
@@ -11,11 +11,11 @@ import Workshop from './components/Workshop.jsx'
 import FAQ from './components/FAQ.jsx'
 import Sponsor from './components/Sponsor.jsx'
 import Footer from './components/Footer.jsx'
+import Scroll from './components/Scroll.jsx'
 
 function App() {
-  return(
-    <>
-      <Navbar/>
+  /*
+  <NewNav/>
       <Tagline/>
       <Countdown/>
       <About/>
@@ -27,7 +27,32 @@ function App() {
       <FAQ/>
       <Sponsor/>
       <Footer/>
-    </>
+  */
+  return(
+    <div>
+      <section id="nav">
+        <NewNav/>
+      </section>
+      <Tagline/>
+      <Countdown/>
+      <section id="about">
+        <About/>
+      </section>
+      <Theme/>
+      <Achievement/>
+      <Prizes/>
+      <section id="schedule">
+        <Schedule/>
+      </section>
+      <section id="workshop">
+        <Workshop/>
+      </section>
+      <section id="faq">
+        <FAQ/>
+      </section>
+      <Sponsor/>
+      <Footer/>
+    </div>
   )
 }
 
