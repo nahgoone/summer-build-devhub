@@ -1,7 +1,7 @@
 import WorkshopCard from "./WorkshopCard.jsx";
-import HTMLLogo from '../assets/htmlIcon.svg';
-import ReactLogo from '../assets/reactIcon.svg';
-import ExpressLogo from '../assets/expressIcon.svg';
+import HTMLLogo from '../../../assets/htmlIcon.svg';
+import ReactLogo from '../../../assets/reactIcon.svg';
+import ExpressLogo from '../../../assets/expressIcon.svg';
 
 function Workshop(){
     return(

@@ -1,6 +1,6 @@
-import LinkedInIcon from '../assets/linkedinIcon.svg'
-import InstagramIcon from '../assets/instagramIcon.svg'
-import WebIcon from '../assets/webIcon.svg'
+import LinkedInIcon from '../../assets/linkedinIcon.svg'
+import InstagramIcon from '../../assets/instagramIcon.svg'
+import WebIcon from '../../assets/webIcon.svg'
 
 function Footer(){
     return(
