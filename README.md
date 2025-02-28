@@ -14,9 +14,9 @@
     - allows the ability to hover over tailwind text and shows the css text
 
 # Deploying React-Vite App on GitHub Pages:
-Link: https://www.vd-developer.online/blog/vite-react-deploy-github
-YT Link: https://www.youtube.com/watch?v=hn1IkJk24ow
-run npm run deploy whenever there is any updates
+Link: https://www.vd-developer.online/blog/vite-react-deploy-github <br>
+YT Link: https://www.youtube.com/watch?v=hn1IkJk24ow <br>
+run npm run deploy whenever there is any updates <br>
 
 # Packages Used
 1. React-Icons: https://react-icons.github.io/react-icons/
