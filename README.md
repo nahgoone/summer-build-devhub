@@ -1,8 +1,27 @@
-# React + Vite
+# Creating React-Vite Project:
+1. use cmd prompt and cd to the folder you want to create the project
+2. run npm create vite@latest
+3. system will prompt for a folder/project name
+4. after setting a name, cd to the project folder
+5. run npm install
+6. to host the website locally, run npm run dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Installing Tailwind:
+1. after step 6 in the same project folder, run npm install tailwindcss @tailwindcss/vite
+2. follow the steps in the documentation: https://tailwindcss.com/docs/installation/using-vite
+3. tailwindcss should have been installed correctly 
+4. npm install -D tailwindcss postcss autoprefixer (optional)
+    - allows the ability to hover over tailwind text and shows the css text
 
-Currently, two official plugins are available:
+# Deploying React-Vite App on GitHub Pages:
+Link: https://www.vd-developer.online/blog/vite-react-deploy-github
+YT Link: https://www.youtube.com/watch?v=hn1IkJk24ow
+run npm run deploy whenever there is any updates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Packages Used
+1. React-Icons: https://react-icons.github.io/react-icons/
+2. React Packages: https://www.npmjs.com/
+    - https://www.npmjs.com/package/react-typed
+3. Tailwind Animations: https://tailwindcss.com/docs/animation
+4. Wavy background: https://getwaves.io/
+5. Poppins Font: https://fonts.google.com/selection
